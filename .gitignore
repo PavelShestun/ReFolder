@@ -1,0 +1,14 @@
+# Compiled files
+*.o
+*.mod
+refolder
+
+# Temporary files
+*.bak
+*.tmp
+
+# Log files
+*.log
+
+# Output files
+*.pdb
