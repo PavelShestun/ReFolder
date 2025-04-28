@@ -56,8 +56,8 @@ test: $(EXEC)
 	cp tests/*.pdb .
 	./$(EXEC)
 
-test_alignment: $(TEST_EXEC)
+run_test_alignment: $(TEST_EXEC)
 	cp tests/*.pdb .
 	./$(TEST_EXEC)
 
-.PHONY: all clean test test_alignment
+.PHONY: all clean test run_test_alignment
