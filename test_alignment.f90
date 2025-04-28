@@ -28,6 +28,20 @@ program TestAlignment
         stop
     end if
 
+    ! Выводим координаты сразу после загрузки
+    print *, "Координаты unbound_struct после загрузки:"
+    do i = 1, unbound_struct%num_residues
+        print *, i, unbound_struct%residues(i)%atoms(1)%x, &
+                    unbound_struct%residues(i)%atoms(1)%y, &
+                    unbound_struct%residues(i)%atoms(1)%z
+    end do
+    print *, "Координаты bound_struct после загрузки:"
+    do i = 1, bound_struct%num_residues
+        print *, i, bound_struct%residues(i)%atoms(1)%x, &
+                    bound_struct%residues(i)%atoms(1)%y, &
+                    bound_struct%residues(i)%atoms(1)%z
+    end do
+
     ! Вычисляем RMSD до выравнивания, используя исходные структуры
     call calculate_rmsd(unbound_orig, bound_orig, rmsd_before)
     print *, "RMSD до выравнивания:", rmsd_before

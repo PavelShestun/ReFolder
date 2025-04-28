@@ -1,5 +1,13 @@
 # ReFolder
 
+ReFolder is a computational tool for protein structure refinement using normal mode analysis in internal coordinates (NMA-IC), ensemble generation, secondary structure prediction, and iterative evaluation.
+
+## Workflow
+
+The workflow diagram below outlines the key steps in the ReFolder pipeline:
+
+![ReFolder Workflow](docs/RefolderWorkflow.png)
+
 ## Overview
 
 **ReFolder** is a computational tool under development for analyzing protein conformational transitions using Internal Coordinate Normal Mode Analysis (iNMA). The project is based on the methodology described in the article *"Internal Coordinate Normal Mode Analysis: A Strategy To Predict Protein Conformational Transitions"* by Frezza & Lavery (2019). The goal is to predict transitions between unbound and bound states of proteins by calculating normal modes in internal coordinates (dihedral angles φ and ψ) and evaluating their overlap with the actual conformational change.

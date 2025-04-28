@@ -12,4 +12,4 @@ refolder
 
 # Output files
 *.pdb
-!tests/*.pdb
+!tests/*.pdbReFolderTest/ReFolder
